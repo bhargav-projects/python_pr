@@ -1,0 +1,29 @@
+#primr number 
+print('enter number')
+n=int(input())
+if n>1:
+    for x in range(2,n):
+        if n%x==0:
+            print(n,'its not prime')
+            break
+    else:
+        print(n,'is prime number')
+else:
+    print('enter correct number')
+    
+    
+# Python program to display all the prime numbers within an interval
+
+lower = 900
+upper = 1000
+
+print("Prime numbers between", lower, "and", upper, "are:")
+
+for num in range(lower, upper + 1):
+   # all prime numbers are greater than 1
+   if num > 1:
+       for i in range(2, num):
+           if (num % i) == 0:
+               break
+       else:
+           print(num)

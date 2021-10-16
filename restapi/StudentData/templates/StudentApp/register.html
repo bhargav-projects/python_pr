@@ -1,0 +1,13 @@
+{% extends "StudentApp/base.html" %}
+{% block body %}
+<div class="continers" align="center">
+    <h1>StudentForm</h1>
+    <form method="post">
+        {% csrf_token %}
+        {{form.as_p}}
+        <input type="submit" class="btn btn-primary" value="submit" />
+</div>
+</form>
+{% endblock %}
+
+    

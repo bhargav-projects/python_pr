@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+</head>
+<body>
+    {%if request.session%}
+    <h1>thanks for providing details </h1>
+    <ul>
+        {%for key,value in request.session.items%}
+        <li> {{key|upper}}:{{value|title}}</li>
+        {%endfor%}
+    </ul>
+    {%else%}
+    <p> nothing </p>
+    {%endif%}
+</body>
+</html>

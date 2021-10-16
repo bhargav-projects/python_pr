@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+{%load static%}
+<head>
+
+<link rel="stylesheet" href="{% static "css/demo.css" %}">
+<img src="{%static 'images/ed.jpg'%}" alt="no images">
+</head>
+<body>
+    <h1>
+hyd jobs info</h1>
+
+<hr>
+{% if jobs_list %}
+<table id='tab'>
+<thead>
+<th> date</th>
+<th> company</th>
+<th> title</th>
+<th> elgibility</th>
+<th> adress</th>
+<th> email</th>
+<th> phonenumber</th>
+</thead>
+{% for job in jobs_list %}
+<tr>
+<td>{{job.date}}</td>
+<td>{{job.company}}</td>
+<td>{{job.title}}</td>
+<td>{{job.elgibility}}</td>
+<td>{{job.adress}}</td>
+<td>{{job.email}}</td>
+<td>{{job.phonenumber}}</td>
+</tr>
+{%endfor%}
+
+</table>
+{%else%}
+<p> no jobs but u can try dont stop</p>
+{%endif%}
+
+</body>
+</html>

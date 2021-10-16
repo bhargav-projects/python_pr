@@ -1,0 +1,21 @@
+h1{
+    color: yellow;
+    text-align: center;
+    background-color: springgreen;
+    background-repeat: repeat;
+}
+table{
+    margin: auto;
+    border: 2px solid  red;
+    background-color: yellow;
+    font size : 25px;
+    
+}
+body{
+    background:url(https://images.unsplash.com/photo-1563110493-198208247614?ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8c2NyZWVuc2F2ZXJ8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=700&q=60)
+  
+}
+.container .jumbotron{
+    margin-top: 100px;
+    
+}

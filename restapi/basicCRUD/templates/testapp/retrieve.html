@@ -1,0 +1,31 @@
+{% extends 'testapp/base.html'%}
+{%block body_block%}
+<h1>Employee Information Dash Board</h1>
+<hr>
+<table border='2'>
+    <thead>
+ 
+        <th> FirstName</th>
+        <th> LastName</th>
+        <th> MobileNumber</th>
+        <th> Email</th>
+        <th> Address</th>
+        <th>Actions</th>
+    </thead>
+    {%for emp in Emp_data %}
+    <tr>
+        <td>{{emp.FirstName}}</td>
+        <td>{{emp.LastName}}</td>
+        <td>{{emp.MobileNumber}}</td>
+        <td>{{emp.Email}}</td>
+        <td>{{emp.adress}}</td>
+        <td>
+            <a href="/update/{{emp.id}}">Update</a>
+            <a href="/delete/{{emp.id}}">Delete</a>
+        </td>
+    </tr>
+    {%endfor%}
+</table><br><br><br>
+<a href="/create" class='btn btn-primary btn-lg'>
+    Do You Want to Insert New Employee</a>
+{%endblock%}

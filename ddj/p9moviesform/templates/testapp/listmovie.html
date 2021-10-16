@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en"> 
+{% load static %}
+<head>
+    <title>movies form </title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="{static 'css/mov.css'}">
+</head>
+<body>
+   <H1>movies information</H1>
+{%if movies_list%}
+<table>
+<thead>
+<th>release date</th>
+<th>moviename</th>
+<th>hero</th>
+<th>heroin</th>
+<th>rating</th>
+</thead>
+{% for Movie in movies_list %}
+<tr>
+<td>{{Movie.rdate}}</td>
+<td>{{Movie.moviname}}</td>
+<td>{{Movie.hero}}</td>
+<td>{{Movie.heroin}}</td>
+<td>{{Movie.rating}}</td>
+</tr>
+{%endfor%}
+</table>
+{%else%}
+<p> no movies found</p>
+{%endif%}
+
+</body>
+</html>l

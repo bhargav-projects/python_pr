@@ -1,0 +1,44 @@
+{% extends "StudentApp/base.html" %}
+{% block body %}
+<div class="continers" align="center">
+    <h1>Student Details</h1>
+    
+    <form  action="search/ " method="POST">
+        {{ form.as_p }}
+       <!-- <input type="number" placeholder="Enter Roll Number" name='q' />&nbsp -->
+        
+        <button type="submit" class="btn btn-primary btn-lg">Search</button>&nbsp   <br>
+        {% csrf_token %}
+        {%if Student_details %}
+        <table border="1">
+            
+            <thead>
+                <th>Roll_number</th>
+                <th>First_name</th>
+                <th>Last_name</th>
+                <th>Age</th>
+        
+            </thead>
+            {%for Student in Student_details %}
+            <tr>
+                <td>{{Student.Roll_Number}}</td>
+                <td>{{Student.First_Name}}</td>
+                <td>{{Student.Second_Name}}</td>
+                <td>{{Student.Age}}</td>
+            </tr>
+            {% endfor %}
+        </table>
+        
+        {% else %}
+        <p>no Student Found</p>
+        {% endif %}
+    </form>
+    <!-- <form action="" method="get">
+        {% csrf_token %}
+        <input type="number" placeholder="Enter Roll Number" name='q' />&nbsp <br>
+        <button type="submit" class="btn btn-dark btn-lg">Search</button>
+    </form> -->
+
+</div>
+
+{% endblock %}

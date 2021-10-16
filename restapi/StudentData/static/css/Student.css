@@ -1,0 +1,23 @@
+h1{
+    background-color: aqua;
+}
+body{
+    background-color:greenyellow;
+}
+.div{
+    background-color:red;
+}
+thead{
+    text-align:center;
+    background-color:white;
+}
+td{
+    background-color:yellow;
+}
+table{
+    border: top 3px;
+
+}
+table{
+    background-position:bottom;
+}

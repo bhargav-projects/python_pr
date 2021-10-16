@@ -1,0 +1,21 @@
+{% extends 'testapp/base.html'%}
+{%block body_block%}
+<h1>Employee Update Form</h1>
+<hr>
+<form method="post">
+    {%csrf_token%}
+    Employee FirstName: <input type="text" name="FirstName" value="{{Emp_data.FirstName}}">
+    <p></p>
+    Employee LastName: <input type="text" name="LastName" value="{{Emp_data.LastName}}">
+
+     <p></p>
+    Employee MobileNumber: <input type="text" name="MobileNumber" value="{{Emp_data.MobileNumber}}">
+    <p></p>
+    Employee Email: <input type="text" name="Email" value="{{Emp_data.Email}}">
+    <p></p>
+    Employee Address: <input type="text" name="adress" value="{{Emp_data.adress}}">
+    <p></p>
+    <input type="submit" class='btn btn-warning btn-lg' value="Update Record">
+    {{form.as_p}}
+</form>
+{%endblock%}

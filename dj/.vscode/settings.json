@@ -1,0 +1,31 @@
+{
+    "jupyter.allowInput": false,
+    "jupyter.addGotoCodeLenses": false,
+    "jupyter.allowImportFromNotebook": false,
+    "jupyter.allowLiveShare": false,
+    "jupyter.collapseCellInputCodeByDefault": false,
+    "jupyter.colorizeInputBox": false,
+    "jupyter.debugJustMyCode": false,
+    "jupyter.decorateCells": false,
+    "jupyter.enableAutoMoveToNextCell": false,
+    "jupyter.enableCellCodeLens": false,
+    "jupyter.enablePlotViewer": false,
+    "jupyter.enableScrollingForCellOutputs": false,
+    "jupyter.jupyterLaunchRetries": 1,
+    "jupyter.jupyterServerType": "local",
+    "jupyter.searchForJupyter": false,
+    "jupyter.showCellInputCode": false,
+    "jupyter.stopOnFirstLineWhileDebugging": false,
+    "jupyter.stopOnError": false,
+    "jupyter.useDefaultConfigForJupyter": false,
+    "launch": {
+
+
+        "configurations": [],
+        "compounds": []
+    },
+    "json.schemas": [
+    
+    ],
+    "workbench.settings.useSplitJSON": true
+}
