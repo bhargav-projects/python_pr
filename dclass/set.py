@@ -13,9 +13,12 @@ s={} treated as empty dict
 l=eval(input('enter l of values'))  it takes user defined data format
  like (2,3) or [2,3] or 23 or 'hi'
 '''
-
-s=set(range(10))  # this works with tuple also
-print(s) #{0,1,2,3,4,5,6,7,8,9}
+# SET DOESNT SUPPORT INDEXING LIKE set[0]
+# set Stores only imutable objects or immutable iterables not iterables 
+set_ = {1,2 ,(3,4),"bhargav",range(10)} # executes
+set_wont_save = {1,2,[3,4],{6,7},{9:10}} # throw error
+# set_.update(10) # throw error but set_.update('abc') wont throw
+ 
 
 #for detailed way  
 l=[1,2,3,4,5,6,5,4,4,5,4]
@@ -35,7 +38,7 @@ print('add',s)
 #update   (cons: update cant take int and float  as an argument) it takes str only
 l=[12,13]
 #s.update(l,range(10),'chakri',10) it gives error because of int(10)
-s.update(l,'chakri','10',10)
+s.update(10) # throws error single int elemetn we cant store in set
 s.update(l,'chakri','10',range(10))
 print('update',s)
 
@@ -181,14 +184,14 @@ print('{} is minimum value and {} is maximum value in set'.format(min1,max1))
 #compare with 3 sets
 s1,s2,s3,s= {'a','b','c','d'},{'c','e','f','a'},{'g','c','p','a'},set()
 for i in s1:
-       if i not in s2 and i not in s3:
-            s.add(i)
+    if i not in s2 and i not in s3:
+        s.add(i)
 for i in s2:
-       if i not in s1 and i not in s3:
-           s.add(i)
+    if i not in s1 and i not in s3:
+        s.add(i)
 for i in s3:
-       if i not in s2 and i not in s1:
-           s.add(i)
+    if i not in s2 and i not in s1:
+        s.add(i)
 print(s)
   #comparing set1 with two sets
 s1,s2,s3,s= {'a','b','c','d'},{'c','e','f','a'},{'c','p','a'},set()

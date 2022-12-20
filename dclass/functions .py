@@ -68,8 +68,6 @@ l1 = list(map(lambda x: x*x, l))
 print(l1)
 l2 = list(filter(lambda x: x % 2 == 0, l))
 print(l2)
-l3 = list(filter(lambda x: x % 2 != 0, l))
-print(l3)
 
 # differents between map and without map
 l1 = [10, 20, 30, 40]

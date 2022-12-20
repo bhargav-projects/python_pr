@@ -9,6 +9,7 @@ we can apply + and * operator for tuple
 t=()     #tuple
 # t=(10,) #tuple
 # t=(10)    int
+# t=(10,20)    tuple
 # t=10      int
 # t=10,    tuple
 # t=10,20  tuple

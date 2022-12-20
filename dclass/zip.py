@@ -3,18 +3,11 @@ places='vrindhavan','gokul','earth'
 
 for index,name in zip(names,places):
     print(index,name)
-    
 
-
-#
-l=1,2,3
-l1='hi','bhargav','how are you'
+list1=1,2,3
+list2='hi','bhargav','how are you'
 x=11,22,33
 x1='iloveu','radhakrishna'
 
-print(list(zip(l,l1,x,x1)))
-
-
-
-
+print(list(zip(list1,list2,x,x1)))
 

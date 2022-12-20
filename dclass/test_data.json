@@ -1,0 +1,50 @@
+[
+    {
+    "id": 4,
+    "shipped": true,
+    "data": {
+    "date": "01-02-2022",
+    "orders": 6
+    }
+    },
+    {
+    "id": 5,
+    "shipped": false,
+    "data": {
+    "date": "01-02-2022",
+    "orders": 17
+    }
+    },
+    {
+    "id": 6,
+    "shipped": false,
+    "data": {
+    "date": "02-02-2022",
+    "orders": 4
+    }
+    },
+    {
+    "id": 7,
+    "shipped": true,
+    "data": {
+    "date": "03-02-2022",
+    "orders": 9
+    }
+    },
+    {
+    "id": 8,
+    "shipped": true,
+    "data": {
+    "date": "03-02-2022",
+    "orders": 18
+    }
+    },
+    {
+    "id": 9,
+    "shipped": true,
+    "data": {
+    "date": "04-02-2022",
+    "orders": 6
+    }
+    }
+   ]

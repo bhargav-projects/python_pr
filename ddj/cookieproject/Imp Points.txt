@@ -1,2 +1,0 @@
-If we are using session framework   compulsory  use migrate
-before running server .  (its  mandatory )

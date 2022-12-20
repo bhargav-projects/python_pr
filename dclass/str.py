@@ -12,7 +12,7 @@ string spaces =lstrip,rstrip,strip
 these functions doesn't remove any space insdie str
 
 string indexing:
-find and index r both are same difference is only -1
+find and index r both are same difference is only -1 if value not 
 
 print(S.rfind('a')  # it serches from rightside and if no occurence matched then it  gives  -1'
 print(S.rindex('a',5,len(S)) # it serches from rightside and if no occurence matched then it  gives ERROR'

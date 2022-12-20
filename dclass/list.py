@@ -1,37 +1,31 @@
 ''' len() is only applicable for lst,tuple,set,str,dict,range OR  sequence items
 except =int complex bool
-sorted(),reversed(),count(), these fun always give list format 
+sorted(),reversed(),count(), these fun always returns the list format 
 In list we have sort() fun but not in tuple so in tuple we use sorted()
-In sorted (reverse=True ) for values in reverse and descending order
+In sorted (reverse=True) for values in reverse and descending order
 #*  we can pack list tuple set dict str
 We can use + and * operators for List objects
 
 '''
 # It is returning list of str output
 s="Learning Python is very very easy !!!" 
-print(type(s)) 
-l=s.split()  # it is returning list of str output
-print(l) 
-print(type(l)) 
+l=s.split()  #list of str output
 # solve index out of range error using membership operators
-l=[1,2,3,4,5,6,11,8,9,0]
-l1=[10,20,30,40,50]
-target=int(input('enter number to search'))
-if target in l:
-    print(target,'available at first occurence',l.index(target))
-else:
-    print(target ,'is not available')
+list_object=[1,2,3,4,5,6,11,8,9,0]
+list_one=[10,20,30,40,50]
+print(list_object.append(10)) # directly add elemts to end
+print(list_object.insert(2,10)) # add at specified index 
+print(list_object.insert(100,1000)) # if index out of range it add elements to end if it is +Ve vale
+print(list_object.insert(-10,100))  # if index less than zero it add elements to front position
+#print(list_object.append(list_one))   # u can append all values And append fun takes only one argument
+print(list_object.remove(9)) #we cant remove use with index  
+#print(list_object.remove())    it will throw Value Error if you are not passing any value or more than one value
+print(list_object.extend("bha")) # ['b','h','a']
 
-print(l.append(10)) # directly add elemts to end
-print(l.insert(2,10)) # add at specified index 
-print(l.insert(100,1000)) # if index out of range it add elements to end if it is +Ve vale
-print(l.insert(-10,100))  # if index less than zero it add elements to front position
-print(l.append(l1))   # u can append all values And append fun takes only one argument
-print(l.remove(9))  #  we cant remove use with index  # if no value it give Value Error
-print(l.pop()) # if len(l) > than list then pop will executes otherwise give error
-print(l.pop(7)) #  using with index not  index values # if no values there in lst  it give Index Error
-print(l)
-print(l.clear()) # it will clear everything and shows empty list 
+print(list_object.pop()) # if len(list_object) > than list then pop will executes otherwise give error
+print(list_object.pop(7)) #  using with index not  index values # if no values there in lst  it give Index Error
+print(list_object.clear()) # it will clear everything and shows empty list 
+# print( del list_object)
 
 #reversing list lements
 l=[1,2,3,4,5,6]
@@ -43,9 +37,7 @@ print(newlist)
 
 #printing list into row and matrix style 
 x=[[10,20,30],[40,50,60],[70,80,90]]
-print('elements row wise ')
-for r in x :
-    print(r)
+
 print('elements in matrxi style')
 for k in range(len(x)):
     for j in range(len(x[k])):
@@ -59,8 +51,8 @@ for x in range(1,11):
 print(l)
 
 #lst comprehension
-l1=[x**2 for x in range (10)  if (x**2)%2==0]
-print(l1)
+list_one=[x**2 for x in range (10)  if (x**2)%2==0]
+print(list_one)
 
 #for squares
 print(list(map(lambda x:x*2,[1,2,3])))
@@ -206,7 +198,8 @@ x=[10,20,30,40]
 2. By using copy() function:
 1) x=[10,20,30,40] 
 2) y=x.copy() 
-3) y[1]=777 
-4) print(x) ==>[10,20,30,40] 
-5) print(y) ==>[10,777,30,40] 
+
 '''
+# x=[10,20,30,40] 
+# y=x.copy()
+# print(y)

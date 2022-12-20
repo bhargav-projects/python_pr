@@ -2,15 +2,7 @@
 #with out split we get confusion and all values will be combined 
 a,b,c=input('enter  3 numbers ').split(',')
 print('max number is :',( a if a>b else b if b>c else c)) 
-
-
-
-
-
-
-
-
-
+ 
 #eval is the best method all the time
 #user input = [1,2,3]or (1,2,3) or set{1,2,3}
 a,b,c=eval(input('enter 3 numbers'))
