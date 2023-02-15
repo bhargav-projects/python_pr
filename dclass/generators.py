@@ -3,8 +3,10 @@ generators is like normal function but it
 produce value one by one  by using yield keyword
 3 ways of calling generator
 
-#return vs yield : return will print the particular value in inside fun and it will be in end of the function body
-but yield will allow the function to run multiple times and you can use multople yields in inside fun
+return vs yield : return will print the particular value in inside fun 
+                  and it will be in end of the function body
+           but yield will allow the function to run multiple times and 
+           you can use multiple yields in inside fun
 
 #* return statement end the function but but yield not like that
 
@@ -77,12 +79,12 @@ print(list(squares(10)))
 
 
 """
-generator is a function that returns an object 
+generator is a function that returns an function object 
 which can iterate over  as one value at a time"""
 ''' iterators  are iterates every time where in lists ,tuples ,strings
 and iterates takes more memory when  comared to genrators'''
- # itertools ,--> map,reduce,file,zip
-# store unique values with sets
+# itertools ,--> map,reduce,file,zip
+ 
 
 mylist=[i for i in range (10000)]
 print(sum(mylist))

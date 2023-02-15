@@ -1,7 +1,4 @@
-x=1,23,4,3,34,223,3,3
-for x in iter(x):  # using loop throu iter
-    print(x)
-
+ 
 class MyNumbers:
   def __iter__(self):
     self.a = 1

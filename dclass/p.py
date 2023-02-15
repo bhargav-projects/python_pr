@@ -7,19 +7,25 @@
 
  
 
-# test ="a4b3c2"
-# output='' # aaaabbbbcc
-# for index,val in enumerate(test):
-#     if val.isalpha():
-#         output+=val * int(test[index + 1])
+test ="a4b3c2"
+output='' # aaaabbbbcc
+for index,val in enumerate(test):
 
-# def factori(n):
-#     if n == 0:
-#         res=1
-#     else :
-#         res=n*factori(n-1)
-#     return res
-# print(factori(5))
+    """
+    #! if val is 4 ,it is inside for its str 
+    #^  but if we perform operation with #! val like isdigit() or isalnum()
+    its working perfectly 
+
+    """
+    if val.isalpha(): 
+        output+=val * int(test[index + 1])
+
+def factori(n):
+    if n == 0 or n==1:
+        return 1
+    else :
+        return n*factori(n-1)
+print(factori(5))
 
  
 

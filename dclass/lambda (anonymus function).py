@@ -1,53 +1,18 @@
-''' lambda is also known as anonymous or no name fun
-its used for instance purpose 
-is possbile to pass one fun to  another function as  argument labmda is best choice  
+''' lambda is also known as anonymous or no name function or one line function
+	its used for instance purpose 
+	is possbile to pass one fun to  another function as 
+	argument labmda is best choice  
 '''
 
-add =lambda a,b,c,d:a+b+c+d
+add =lambda a,b:a+b
 print(add(12,32,43,46))
-
-#
-s=lambda n:n*n
-print(s(2))
-print(s(4))
-
-
-#
-s=lambda a,b,c:a if a>b and a>c  else b if b>c else c
-print(s(2,3,6))
-
-#
-s=lambda a,b:a if a>b else b 
-print(s(2,3))
-print('the biggest of {}and {} is {}'.format(10,20,s(10,20)))
-
-''' 
-lambda function that adds the multiplies  
-'''
-
-#aa
-n1,n2=int(input("Enter Number:- ")),int(input("Enter Number:-"))
-fun,fun1=lambda n1,n2:n1+n2,lambda n1,n2:n1*n2
-print('add',fun(n1,n2),'\n','mul',fun1(n1,n2))
-
-#ap
-b=5
-x = lambda a: a+5  #s = lambda a : a+5
-print("sum:",s(int(input("Enter no"))))
-print(x(b)) # we are printing directly calling lambda expression
-m = lambda x, y : x * y
-print("multi:",m(5,5))
-
+ 
 '''sort a list of tuples
 '''
-
 students = [('sai', 18,10.20), ('charan', 30,3.5), ('kumar', 27,4.5), ('cherry', 12,1.2)]
-print("Original tuples:")
-print(students)
 
 #here key means its asking which index u want to compare among all tuples in list
-#if x[0]= it comapares names,x[1]=int,x[2]=float values,
-#if i try to do x[3] we get index out of range
+#if x[0]= str vslues ,x[1]=int,x[2]=float values,
 
 students.sort(key = lambda x: x[0])
 print("\nSorted Tuples:")
@@ -75,32 +40,9 @@ sort the odd and even number
 from given number of list using lambda function.
 
 '''
-
-l=[1,7,2,9,3,6,4,8,5]
-even,odd=list(filter(lambda x:x%2==0 ,l)),list(filter(lambda x:x%2 !=0 ,l))
-print('original list',l)
-print('even ',sorted(even),'odd',sorted(odd))
-
+ 
 '''
-whether a given string starts
-with a given character using Lambda function.
-
-'''
-#aa
-s='abc'
-c='a'
-s1='abc'
-c1='z'
-
-fun=lambda a,b: a[0]==b  
-#a[0]=='b' if u watn to check particular letter
-print(fun(s,c))
-print(fun(s1,c1))
-
-# isstartswith
-x = lambda x:True if x.startswith('p') else False
-print(x('python'))
-
+ 
 # user input
 b=input('eneter char u want to start')
 start = lambda x: True if x.startswith(b) else False
@@ -158,30 +100,26 @@ print("Day : ",day(date))
 print("Time : ",t)
 
 '''
- common elements between 2 list using lambda '''
+#  common elements between 2 list using lambda '''
 
 ##
 a=[1,2,4,3,5,6]
 b=[6,3,8,9,1,2]
-print("original lists:",a,b)
 common=list(filter(lambda x:x in a,b))
 print("common elements from two sets:",common)
+ 
+"""
+here what i observed is we can check n no of lists by using 
+for x in l1 if x in l2  if x in l3 ....
+this is nothing but if loop in vertical direction 
+it means that 1st if satisifies again 2nd if and agian 3rd if 
 
-##aa
-l1=[1,2,3,4,5]
-l2=[4,5,6,7,8]
-
-fun=lambda list1,list2 : [x for x in list1 if x in list2]
-
-print(fun(l1,l2))  
-
-#here what i observed is we can check n no of lists by using 
-# for x in l1 if x in l2  if x in l3 ....this is nothing but if loop in vertical direction 
-#it means that 1st if satisifies again 2nd if and agian 3rd if 
-'''
+ 
   if cond 1:
 	  if cond 2:
 		  if condi3:
 			  and so on...
-here i conlcude that  program logics are we can mix their formats in different syntaxes
-'''
+here i conlcude that  program logics are
+ we can mix their formats in different syntaxes
+
+"""

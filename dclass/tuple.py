@@ -111,22 +111,15 @@ else:
     print(x,"is not in the tuple")
 
 
-
 # Write a program to replace last values of tuple in a list.
-
-# Sample list: [(10, 20, 40), (40, 50, 60), (70, 80, 90)]
 # Expected Output: [(10, 20, 100), (40, 50, 100), (70, 80, 100)]
-
 l=[(10,20,40),(20,40,50),(70,80,90)]
 print([t[:-1]+(100,)for t in l]) 
+"""
+ tuple we cant perform any operation but we can do #!conacationantion
+ so im taking values from #! start:before the end value
+ then i concat my expected value to existing value
+"""
+ 
 
-lst = [(10, 20, 40), (40, 50, 60), (70, 80, 90)]
-ans =[]
-for i in lst:
-  x = list(i)
-  x[len(x)-1]=100
-  ans.append(tuple(x))
-print(ans)
-
-
-
+ 
