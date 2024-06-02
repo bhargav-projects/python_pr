@@ -25,4 +25,43 @@ for first in range(list1_length):
         if list1[first]>list1[second]:
             list1[first], list1[second] = list1[second], list1[first] 
 print(list1[-2])
-        
+
+def get_second_largest(array):
+
+    largest = 0
+    second_largest = 0
+
+    for number in array:
+
+        if number > largest:
+
+            second_largest = first_max
+            first_max = number
+
+        elif number > second_largest and number != second_largest:
+            second_largest = number
+
+    return second_largest
+
+
+def get_second_largest(array):
+
+    largest = max(array[0], array[1])
+    second_largest = min(array[0], array[1])
+
+    for number in array[2:]:
+
+        if number > largest:
+
+            second_largest = first_max
+            first_max = number
+
+        elif number > second_largest and number != second_largest:
+            second_largest = number
+
+    return second_largest
+
+
+
+def get_second_largest(array):
+    return max( filter(lambda x: x != max(array), array), default="2 elements required.")
